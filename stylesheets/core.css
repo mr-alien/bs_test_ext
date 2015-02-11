@@ -1,0 +1,172 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,100italic,100,400italic);
+
+::-webkit-input-placeholder {
+	color: #ccc;
+	font-style: italic;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fafafa;
+	min-height: 300px;
+	width: 600px;
+	font-family: Roboto, Arial;
+	font-size: 17px;
+	font-weight: 100;
+	color: #515151;
+	padding-bottom: 20px;
+}
+
+select,
+input[type=text] {
+	font-size: 13px;
+	font-weight: inherit;
+	padding: 10px;
+	width: 90%;
+	display: block;
+	-webkit-appearance: none;
+	margin: 15px auto;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: border .5s linear;
+	border: 1px solid #ddd;
+	background-color: transparent;
+}
+
+select:disabled {
+	background-color: #eee;
+	cursor: default;
+}
+
+select:hover,
+input[type=text]:hover {
+	border: 1px solid #ccc;
+}
+
+select {
+	text-transform: capitalize;
+}
+
+.custom-select {
+	background-image: url(../images/chevron.png);
+	background-repeat: no-repeat;
+	background-size: 10px auto;
+	background-position: 92% center;
+}
+
+.clear:after {
+	clear: both;
+	display: table;
+	content: "";
+}
+
+.logo {
+	width: 90%;
+	border-bottom: 1px solid #eee;
+	text-align: center;
+	margin: 30px auto;
+	margin-top: 20px;
+}
+
+.logo img {
+	padding-bottom: 10px;
+	max-width: 40%;
+}
+
+.lists {
+	padding: 0 20px;
+}
+
+.lists div div {
+	width: 42.5%;
+	margin-left: 28px;
+	float: left;
+}
+
+.lists div div select {
+	margin: 0;
+	width: 100%;
+}
+
+.test-btn {
+	border: 1px solid #ddd;
+	padding: 10px 20px;
+	font-family: inherit;
+	font-weight: inherit;
+	background-color: transparent;
+	text-transform: uppercase;
+	border-radius: 5px;
+	font-size: 12px;
+	float: right;
+	margin-right: 30px;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+.test-btn:not(:disabled):hover {
+	border: 1px solid #ccc;
+}
+
+.test-btn:disabled {
+	background: #f5f5f5;
+	cursor: default;
+}
+
+.info {
+	border: 1px solid #ddd;
+	font-size: 12px;
+	font-weight: 300;
+	padding: 10px;
+	width: 85%;
+	word-wrap: break-word;
+	margin: 20px auto;
+}
+
+.info span {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.info span:nth-child(3) {
+	text-transform: capitalize;
+}
+
+.info span:last-child {
+	margin-bottom: 0;
+}
+
+.info span:nth-child(1):before {
+	content: "OS : ";
+	font-weight: bold;
+}
+
+.info span:nth-child(2):before {
+	content: "OS Version : ";
+	font-weight: bold;
+}
+
+.info span:nth-child(3):before {
+	content: "Browser : ";
+	font-weight: bold;
+}
+
+.info span:nth-child(4):before {
+	content: "Browser Version : ";
+	font-weight: bold;
+}
+
+.info span:nth-child(5):before {
+	content: "URL : ";
+	font-weight: bold;
+}
+
+.info span:before {
+	width: 100px;
+	display: inline-block;
+}

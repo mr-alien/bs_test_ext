@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>BrowserStack Live</title>
+		<link rel="stylesheet" href="stylesheets/core.css" />
+	</head>
+	<body>
+		<div class="logo">
+			<a href="http://browserstack.com" target="_blank">
+				<img src="images/big-logo.png" alt="BrowserStack Logo" />
+			</a>
+		</div>
+
+		<div class="lists clear">
+			<div class="custom-select">
+				<select id="oses" disabled>
+					<option value="" selected="selected">Select OS</option>
+				</select>
+			</div>
+			<div class="clear">
+				<div class="custom-select">
+					<select id="browsers" disabled>
+						<option value="">Select Browser</option>
+					</select>
+				</div>
+				<div class="custom-select">
+					<select id="browsers_ver" disabled>
+						<option value="">Select Version</option>
+					</select>
+				</div>
+			</div>
+			<input type="text" placeholder="Test A Different Page? Enter URL (Start off with http://)" title="Will fetch current page URL on submit if left blank" id="testUrl" />
+			<button class="test-btn" disabled>Test</button>
+		</div>
+		<div class="info">
+			<p>
+				<span class="os-i">To Be Selected</span>
+				<span class="os-ver-i">To Be Selected</span>
+				<span class="browser-i">To Be Selected</span>
+				<span class="browser-ver-i">To Be Selected</span>
+				<span class="url-i">N.A</span>
+			</p>
+		</div>
+
+		<script src="scripts/jquery.min.js"></script>
+		<script src="scripts/core.js"></script>
+	</body>
+</html>

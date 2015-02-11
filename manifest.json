@@ -1,0 +1,23 @@
+{
+    "manifest_version" : 2,
+    "name" : "BrowserStack",
+    "description" : "Extension for BrowserStack Live",
+    "version" : "1.0",
+
+    "browser_action" : {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html"
+},
+
+"icons" : {
+    "48" : "images/icon.png"
+},
+
+"permissions" : [
+    "http://www.browserstack.com/",
+    "tabs"
+],
+
+"content_security_policy" : "script-src 'self'; http://www.browserstack.com/list-of-browsers-and-platforms.json?product=live; object-src 'self'"
+
+}
