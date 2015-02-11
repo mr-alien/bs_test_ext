@@ -25,12 +25,6 @@ var rewriteURL = function () {
 		params.url = tabs[0].url;
 		formUrl();
 	});
-
-	// if(params.url == '') {
-	// 	rewriteURL();
-	// } else {
-	// 	params.url = $('#testUrl').val();
-	// }
 }
 
 rewriteURL(); //Put the default page URL first
